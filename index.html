@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Activity</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>Registry Form</h1>
+    <ul>
+        <li>Home</li>
+        <li>About the site</li>
+        <li>Registry</li>
+        <li>Content</li>
+        <li>Copyright</li>
+    </ul>
+
+    <form>
+        <fieldset>
+            <legend>New account registry</legend>
+            <span>Your information is safe with us.</span>
+            <div style="margin-bottom: 30px;">
+                <label for="Name">Name</label>
+                <br>
+                <input type="text" id="Name" />
+            </div>
+            <div style="margin-bottom: 30px">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" />
+            </div>
+            <div style="margin-bottom: 30px">
+                <label for="password">Password</label>
+                <br>
+                <input type="password" />
+            </div>
+            <div style="margin-bottom: 30px">
+                <label for="password-confirmation">Password confirmation</label>
+                <br>
+                <input type="password-confirmation" />
+            </div>
+            <div style="margin-bottom: 30px">
+                <label for="country">Country</label>
+                <br>
+                <select>
+                    <option value="MX">Mexico</option>
+                    <option value="FR">France</option>
+                </select>
+            </div>
+            <div style="margin-bottom: 30px">
+                    <label for="option1">Mexico</label>
+                    <input type="radio" id="mx" name="opt1"/>
+                    <br>
+                    <label for="option2">France</label>
+                    <input type="radio" id="fr" name="opt1"/>
+            </div>
+
+            <input type="submit" value="Submit"/>
+            <input type="submit" value="Submit 2"/>
+        </fieldset>
+    </form>
+</body>
+
+</html>
