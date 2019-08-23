@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1> Registry Form </h1>
+
+        <ul> 
+            <li> Home </li>
+            <li> About the site </li>
+            <li> Registry </li>
+            <li> Contact </li>
+            <li> Copyright </li>
+        </ul>
+
+        <form>
+            <fieldset>
+                <legend> New Account Registry </legend>
+                <label for="name"> Complete Name </label>
+                <br>
+                <input id="name" type="text" />
+
+                <br><br>
+
+                <label for="mail"> Email</label>
+                <br>
+                <input id="mail" type="email" />
+
+                <br><br>
+
+                <label for="pwd"> Password </label>
+                <br>
+                <input id="pwd" type="password" />
+
+                <br><br>
+
+                <label for="pwdConf"> Password Confirmarion </label>
+                <br>
+                <input id="pwdConf" type="password" />
+
+                <br><br>
+
+                <label for="country"> Country </label>
+                <br>
+                <select id="country">
+                    <option value="mx">
+                        Mexico
+                    </option>
+
+                </select>
+
+                <br><br>
+
+                <input type="radio" id="men" name="sex" />
+                <label for="men">
+                    Masculine
+                </label>
+
+                <input type="radio" id="women" name="sex" />
+                <label for="women">
+                    Femenine
+                </label>
+
+                <br><br>
+                
+                <button type="reset">Cancel</button>
+                <button type="submit">Submit</button>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
