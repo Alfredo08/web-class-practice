@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registry Form</title>
+</head>
+<body>
+    <h1>Registry Form</h1>
+    <ul>
+        <li>Home</li>
+        <li>About the site</li>
+        <li>Regitry</li>
+        <li>Contact</li>
+        <li>Copyright</li>
+    </ul>
+    <br>
+    <form>
+        <fieldset>
+            <legend>New account registry</legend>
+            Your information is safe wth us.
+            <br>
+            <br>
+            <label for="name">Complete Name</label>
+            <br>
+            <input type="text" id="name">
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="text" id="email">
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" id="password">
+            <br>
+            <br>
+            <label for="confirmation">Password confirmation</label>
+            <br>
+            <input type="password" id="confirmation">
+            <br>
+            <br>
+            <label for="country">Country</label>
+            <br>
+            <select id="country">
+                <option value="mexico">Mexico</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+                <option value="usa">United States</option>
+            </select>
+            <br>
+            <br>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Masculino</label>
+            <br>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Femenino</label>
+            <br>
+            <br>
+            <input type="button" value="Cancel">
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
