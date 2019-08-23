@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Class Practice</title>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+	
+	<header>
+		<h1>Registry Form</h1>
+	</header>
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li>About the site</li>
+			<li>Registry</li>
+			<li>Contact</li>
+			<li>Copyright</li>
+		</ul>
+	</nav>
+
+	<main>
+		<form>
+			<fieldset>
+				<legend>
+					New Account Registry
+				</legend>
+
+				<span>
+					Your information is safe with us: 
+				</span>
+
+				<div id="InputTextDataContainer">
+					<label for="textInputFullName">
+						Complete Name:
+					<input type="text" id="textInputFullName" value="Insert Value" >
+					</label>
+					<br>
+					<label for="textInputEmail">
+							Email:
+					<input type="email" id="textInputEmail" value="Insert Value" >
+					</label>
+					<br>
+					<label for="textInputPassword">
+							Password: 
+					<input type="Password" id="textInputPassword" value="Insert Value" >
+					</label>
+					<br>
+					<label for="textInputPassword2">
+							Password Confirmation: 
+					<input type="Password" id="textInputPassword2" value="Insert Value" >
+					</label>
+					<br>
+				</div>
+
+				<br>
+
+				<div id="RadioButtonDataContainer">
+					<label for="radio1">
+						Masculine:
+						<input type="radio" id="radio1" name="gender" value="M"/>
+					</label>
+					<br>
+					<label for="radio2">
+					Feminine: 
+					<input type="radio" id="radio2" name="gender" value="F"/>
+				</label>
+				</div>
+
+				<br>
+
+				<div id="DropDownDataContainer">
+					<label>Country</label>
+					<br>
+					<select>
+						<option value="one" >Mexico</option>
+						<option value="one" >USA</option>
+					</select>
+				</div>
+
+				<button>Cancel</button>
+				<button>Submit</button>
+
+			</fieldset>
+		</form>
+	</main>
+</body>
+</html>

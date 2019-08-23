@@ -1,0 +1,45 @@
+body {
+	font-family: Verdana, sans-serif
+	font-size: 13px;
+	color: #4F545F;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	background-color: #55B3C5;
+	margin: 0;
+	padding: 20px;
+	color: white; 
+}
+
+fieldset {
+	margin: 20px;
+	padding: 20px;
+	border: 2px dashed #DDDDDD;
+}
+
+legend {
+	font-size: 18px;
+	/*
+	Thickness
+	*/
+	font-weight: 900;  
+}
+/*
+target elements forms and look for spans 
+navigate between the elements
+form > span
+*/
+form span {
+	color: #42579C;
+	border: 1px solid #6278B0;
+	padding: 20px 40px;
+	/*
+	To reacommodate all the box model of this element 
+	background-color: all except for image;
+	*/
+	display: block;
+	background: url('./../img/infoicon.png') no-repeat center left;
+	
+}
