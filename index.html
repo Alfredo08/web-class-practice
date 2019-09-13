@@ -4,10 +4,14 @@
         <title>Document</title>
     </head>
 
+    <link type="text/css" rel="stylesheet" href="./css/index.css">
+    <link type="text/css" rel="stylesheet" href="./css/main.css">
+
+
     <body>
         <h1> Registry Form </h1>
 
-        <ul> 
+        <ul id="navMenu"> 
             <li> Home </li>
             <li> About the site </li>
             <li> Registry </li>
@@ -18,38 +22,49 @@
         <form>
             <fieldset>
                 <legend> New Account Registry </legend>
+
+                <div>
+                    Your info is safe with us.
+                </div>
+
                 <label for="name"> Complete Name </label>
                 <br>
-                <input id="name" type="text" />
+                <input id="name" type="text" /> <span class="error" id="nameError"></span>
 
                 <br><br>
 
                 <label for="mail"> Email</label>
                 <br>
-                <input id="mail" type="email" />
+                <input id="mail" type="email" /> <span class="error" id="mailError"></span>
 
                 <br><br>
 
                 <label for="pwd"> Password </label>
                 <br>
-                <input id="pwd" type="password" />
+                <input id="pwd" type="password" />  <span class="error" id="pwdError"></span>
 
                 <br><br>
 
                 <label for="pwdConf"> Password Confirmarion </label>
                 <br>
-                <input id="pwdConf" type="password" />
+                <input id="pwdConf" type="password" /> <span class="error" id="pwdConfError"></span>
 
                 <br><br>
 
                 <label for="country"> Country </label>
                 <br>
                 <select id="country">
+                    <option value="null">
+                        Select a country
+                    </option>
                     <option value="mx">
                         Mexico
                     </option>
+                    <option value="us">
+                        United States
+                    </option>
 
-                </select>
+                </select> <span class="error" id="countryError"></span>
 
                 <br><br>
 
@@ -61,14 +76,18 @@
                 <input type="radio" id="women" name="sex" />
                 <label for="women">
                     Femenine
-                </label>
+                </label> 
+
+                <span class="error" id="sexError"></span>
 
                 <br><br>
                 
-                <button type="reset">Cancel</button>
-                <button type="submit">Submit</button>
+                <button type="reset" class="formButton" id="cancelButton">Cancel</button>
+                <button type="submit" class="formButton" id="submitButton">Submit</button>
 
             </fieldset>
+
         </form>
+        <script src="./src/index.js"></script>
     </body>
 </html>
