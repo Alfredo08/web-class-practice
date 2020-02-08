@@ -36,15 +36,22 @@ legend {
 
 fieldset > div {
     /* padding: 40px;  */
-    background: url(./../../../repos/fork/web-class-practice/assets/sad_cat.jpg) no-repeat center #cce9f8;
+    /* background: url(./../assets/sad_cat.jpg) no-repeat center #cce9f8;
     border: 1px solid #6278b0;
     color: #42579c;
     display: block;
-    /* background-image: url(./../../repos/fork/web-class-practice/assets/sad_cat.jpg);
+    background-image: url(./../../repos/fork/web-class-practice/assets/sad_cat.jpg);
     background-repeat: no-repeat;
-    background-position: center ;  */
-    /* background-position: 10px 10px; */
-    background-size: 20% 40%;
+    background-position: center ; 
+    background-position: 10px 10px;
+    background-size: 20% 40%; */
+    background: url('./../assets/infoicon.png') no-repeat #CCE9F8;;
+	border: 1px solid #6278B0;
+    color: #42579C;
+    padding: 20px 40px;
+    display : block;
+    background-size: 20px 20px;
+    background-position: 15px 18px;
 }
 
 .formElement, select {
@@ -60,7 +67,7 @@ fieldset > div {
     border-radius: 5px;
     color: white;
 }
-.formButton, hover {
+.formButton:hover {
     cursor: pointer;
 }
 
@@ -76,6 +83,7 @@ fieldset > div {
 #navMenu {
     list-style: none;
     background-color: #CCC;
+    color: black;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -86,7 +94,7 @@ fieldset > div {
     padding: 20px;
 }
 
-#navMenu > li, hover {
+#navMenu > li:hover {
     color: white;
     cursor: pointer;
     background-color: #999;

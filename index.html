@@ -1,93 +1,109 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Document</title>
-    </head>
 
-    <link type="text/css" rel="stylesheet" href="./css/index.css">
-    <link type="text/css" rel="stylesheet" href="./css/main.css">
+<head>
+    <title>Document</title>
+</head>
+
+<link type="text/css" rel="stylesheet" href="./css/index.css">
+<link type="text/css" rel="stylesheet" href="./css/main.css">
 
 
-    <body>
+<body>
+    <main>
         <h1> Registry Form </h1>
 
-        <ul id="navMenu"> 
-            <li> Home </li>
-            <li> About the site </li>
-            <li> Registry </li>
-            <li> Contact </li>
-            <li> Copyright </li>
+        <ul id="navMenu">
+            <li id="home"> Home </li>
+            <li id="about"> About the site </li>
+            <li id="registry" class="selected"> Registry </li>
+            <li id="contact"> Contact </li>
+            <li id="copyright"> Copyright </li>
         </ul>
 
-        <form>
-            <fieldset>
-                <legend> New Account Registry </legend>
+        <section id="homeSection" hidden="true"><a>This is home</a></section>
 
-                <div>
-                    Your info is safe with us.
-                </div>
+        <section id="aboutSection" hidden="true"><a>This is about</a></section>
 
-                <label for="name"> Complete Name </label>
-                <br>
-                <input id="name" type="text" /> <span class="error" id="nameError"></span>
+        <section id="registrySection" class="currentSelected">
+            <form>
+                <fieldset>
+                    <legend> New Account Registry </legend>
 
-                <br><br>
+                    <div>
+                        Your info is safe with us.
+                    </div>
 
-                <label for="mail"> Email</label>
-                <br>
-                <input id="mail" type="email" /> <span class="error" id="mailError"></span>
+                    <label for="fullName"> Complete name </label>
+                    <br>
+                    <input id="fullName" type="text" /> <span class="error" id="fullNameError" hidden>Please provide your full name</span>
 
-                <br><br>
+                    <br><br>
 
-                <label for="pwd"> Password </label>
-                <br>
-                <input id="pwd" type="password" />  <span class="error" id="pwdError"></span>
+                    <label for="email"> Email</label>
+                    <br>
+                    <input id="email" type="mail" /> <span class="error" id="emailError" hidden="true">Please provide your email</span>
 
-                <br><br>
+                    <br><br>
 
-                <label for="pwdConf"> Password Confirmarion </label>
-                <br>
-                <input id="pwdConf" type="password" /> <span class="error" id="pwdConfError"></span>
+                    <label for="password"> Password </label>
+                    <br>
+                    <input id="password" type="password" /> <span class="error" id="passwordError" hidden>Please provide a password</span>
 
-                <br><br>
+                    <br><br>
 
-                <label for="country"> Country </label>
-                <br>
-                <select id="country">
-                    <option value="null">
-                        Select a country
-                    </option>
-                    <option value="mx">
-                        Mexico
-                    </option>
-                    <option value="us">
-                        United States
-                    </option>
+                    <label for="passwordConf"> Password Confirmarion </label>
+                    <br>
+                    <input id="passwordConf" type="password" /> <span class="error" id="passwordConfError" hidden>Please confirm your password</span>
 
-                </select> <span class="error" id="countryError"></span>
+                    <br><br>
 
-                <br><br>
+                    <label for="country"> Country </label>
+                    <br>
+                    <select id="country">
+                            <option value="0">
+                                Select a country
+                            </option>
+                            <option value="mx">
+                                Mexico
+                            </option>
+                            <option value="us">
+                                United States
+                            </option>
+        
+                        </select> <span class="error" id="countryError" hidden="true"> Please provide your country</span>
 
-                <input type="radio" id="men" name="sex" />
-                <label for="men">
-                    Masculine
-                </label>
+                    <br><br>
 
-                <input type="radio" id="women" name="sex" />
-                <label for="women">
-                    Femenine
-                </label> 
+                    <input type="radio" id="men" name="gender" />
+                    <label for="men">
+                            Masculine
+                        </label>
 
-                <span class="error" id="sexError"></span>
+                    <input type="radio" id="women" name="gender" />
+                    <label for="women">
+                            Femenine
+                        </label>
 
-                <br><br>
-                
-                <button type="reset" class="formButton" id="cancelButton">Cancel</button>
-                <button type="submit" class="formButton" id="submitButton">Submit</button>
+                    <span class="error" id="genderError" hidden="true">Please provide your gender</span>
 
-            </fieldset>
+                    <br><br>
 
-        </form>
-        <script src="./src/index.js"></script>
-    </body>
+                    <button type="reset" class="formButton" id="cancelButton">Cancel</button>
+                    <button type="submit" class="formButton" id="submitButton">Submit</button>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="contactSection" hidden="true"><a>This is contact</a></section>
+
+        <section id="copyrightSection" hidden="true"><a>This is copyright</a></section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./src/index.js" hidden="true"></script>
+</body>
+
 </html>
